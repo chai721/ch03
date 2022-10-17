@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/isotope.css">
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/animate.min.css"/>
+		<link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+		
+		<!-- sample color stylesheet 
+		<link rel="stylesheet" href="css/color/blue.css">
+		-->
+		
+        <!-- favicon -->
+      <!--  <link rel="icon" type="image/png" href="favicon.png" /> -->
+
+		<!-- Google fonts -->
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+        <div class="navbar affix main-trend-navbar">
+            <div class="navbar-inner">
+                <img src="img/nav1.jpg" class="profile-pic"/>
+                <a href="#" class="small-nav-toggle"><i class="fa fa-bars"></i></a>
+                <div style="clear:both"></div>
+                 <ul class="nav option-set scroll-link">
+                    <li><a href="#home"><i class="fa fa-coffee"></i> Home</a></li><li>
+                    <a href="#portfolio"><i class="fa fa-camera"></i> Portfolio</a></li><li>
+                    <a href="#about"><i class="fa fa-user"></i> About</a></li><li>
+                    <a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+                 </ul>
+				 
+				 <!-- DEMO START -->
+				 <ul class="nav demo-nav">
+                    <li><a href="#demo-content" id="demo-toggle"><i class="fa fa-gear"></i> Demo</a></li>
+				 </ul>
+				 <div class="demo-area">
+					 <span class="demo-msg">Demo Colors:
+					 </span>
+					 <a href="#" style="background:#f8166c" data-color="pink"></a>
+					 <a href="#" style="background:#68a0f5" data-color="blue"></a>
+					 <a href="#" style="background:#32d436" data-color="green"></a>
+					 <a href="#" style="background:#d5c013" data-color="gold"></a>
+					 <a href="#" style="background:#4cb89b" data-color="teal"></a>
+					 <a href="#" style="background:#fe2525" data-color="red"></a>
+				 </div>
+				<script>
+				function change_color(color){
+					var doc = document; // shortcut
+					var head  = doc.getElementsByTagName('head')[0];
+					var link  = doc.createElement('link');
+					link.rel  = 'stylesheet';
+					link.type = 'text/css';
+					link.href = 'css/color/'+color+'.css';
+					link.media = 'all';
+					head.appendChild(link);
+				}
+				$('.demo-area a').click(function(e){
+					e.preventDefault();
+					change_color($(this).attr("data-color"));
+					$('.demo-area').slideUp(150);
+				});
+				$('#demo-toggle').click(function(e){
+					e.preventDefault();
+					$('.demo-area').slideToggle(150);
+				});
+				</script>
+				<style>
+					.demo-area a{
+						width: 17px;
+						height: 17px;
+						display: inline-block;
+						margin: 1px 6px 1px 0;
+						border-radius: 2px;
+						border: 2px solid #f6f6f6;
+						border: 2px solid transparent;
+						transition: 150ms all;
+						-o-transition: 150ms all;
+						-moz-transition: 150ms all;
+						-webkit-transition: 150ms all;
+					}
+					.demo-area a:hover{
+						opacity: 0.9;
+						border-color: rgba(0,0,0,0.4);
+					}
+					.demo-area a:active{
+						box-shadow: none;
+					}
+					span.demo-msg{
+						font-size: 10px;
+						text-transform: uppercase;
+						font-weight: bold;
+						display: block;
+						color: #aaa;
+					}
+					.demo-area{
+						display: none;
+						margin: 10px 12px 5px 12px;
+					}
+					@media(max-width: 767px){
+						.demo-area, .demo-nav{
+							display: none !important;							
+						}
+					}
+				</style>
+				<!-- DEMO END -->
+
+            </div>
+			
+        </div>
+		
+		<!-- home begins -->
+        <div id="home" class="content-section masthead-content">
+            <div class="main-masthead">
+                <div class="container masthead-container text-center">
+					<div class="animate__animated animate__bounce">
+						<h1 class="intro-text">shiba lnu</h1>
+					</div>
+                    
+                    <h2 class="intro-secondary">one's own little world</h2>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/" class="btn btn-round btn-clear"><i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" class="btn btn-round btn-clear"><i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.google.ca/" class="btn btn-round btn-clear"><i class="fa fa-google-plus"></i>
+                    </a>
+                </div>
+                </div>
+                <img class="masthead-image parallax" src="img/main1.jpg">
+            </div>
+        </div>
+		
+		<!-- home ends -->
+		
+		<!-- portfolio begins -->
+        <div class="content-section" id="portfolio">
+            <div class="container">
+                <h1 style="color: #f8166c;">Portfolio</h1>
+                <ul class="nav option-isotope" data-option-key="filter">
+                    <li>
+                        <a href="#show-all" data-option-value="*" class="selected btn btn-clear">All
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-option-value=".category-1" class="btn btn-clear">Photo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-option-value=".category-2" class="btn btn-clear">Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-option-value=".category-3" class="btn btn-clear">Video
+                        </a>
+                    </li>
+                </ul>
+                <div id="container-isotope" class="super-list clearfix">
+                    <a href="project_image_1.html" class="element category-1">
+                        <img src="img/portfolio/1.jpeg" class="portfolio-image" alt="portfolio image"/>
+                        <span class="portfolio-text">
+                            <h3>Shiba lnu
+                            </h3>
+                            <span><i class="fa fa-tag"></i>Photo
+                            </span>
+                            <p>In order to be irreplaceable, one must always be different.
+                            </p>
+                        </span>
+                    </a>
+                    
+                    <a href="project_carousel_2.html" class="element category-2">
+                        <img src="img/portfolio/2.jpeg" class="portfolio-image" alt="portfolio image"/>
+                        <span class="portfolio-text">
+                            <h3>Shiba lnu
+                            </h3>
+                            <span><i class="fa fa-tag"></i>Gallery
+                            </span>
+                            <p>In order to be irreplaceable, one must always be different.
+                            </p>
+                        </span>
+                    </a>
+                    
+                    <a href="project_video_3.html" class="element category-3">
+                        <img src="img/portfolio/3_thumb.jpeg" class="portfolio-image" alt="portfolio image"/>
+                        <span class="portfolio-text">
+                            <h3>Shiba lnu
+                            </h3>
+                            <span><i class="fa fa-tag"></i>Video
+                            </span>
+                            <p>In order to be irreplaceable, one must always be different.
+                            </p>
+                        </span>
+                    </a>
+                    
+                    <a href="project_carousel_4.html" class="element category-2">
+                        <img src="img/portfolio/4_thumb.jpeg" class="portfolio-image" alt="portfolio image"/>
+                        <span class="portfolio-text">
+                            <h3>Shiba lnu
+                            </h3>
+                            <span><i class="fa fa-tag"></i>Gallery
+                            </span>
+                            <p>In order to be irreplaceable, one must always be different.
+                            </p>
+                        </span>
+                    </a>
+                    
+                    <a href="project_image_5.html" class="element category-1">
+                        <img src="img/portfolio/5_thumb.jpeg" class="portfolio-image" alt="portfolio image"/>
+                        <span class="portfolio-text">
+                            <h3>Shiba lnu
+                            </h3>
+                            <span><i class="fa fa-tag"></i>Photo
+                            </span>
+                            <p>In order to be irreplaceable, one must always be different.
+                            </p>
+                        </span>
+                    </a>
+                    
+                    <a href="project_video_6.html" class="element category-3">
+                        <img src="img/portfolio/6_thumb.jpg" class="portfolio-image" alt="portfolio image"/>
+                        <span class="portfolio-text">
+                            <h3>Shiba lnu
+                            </h3>
+                            <span><i class="fa fa-tag"></i>Video
+                            </span>
+                            <p>In order to be irreplaceable, one must always be different.
+                            </p>
+                        </span>
+                    </a>
+                    
+                    <a href="project_image_7.html" class="element category-1">
+                        <img src="img/portfolio/7_thumb.jpg" class="portfolio-image" alt="portfolio image"/>
+                        <span class="portfolio-text">
+                            <h3>Shiba lnu
+                            </h3>
+                            <span><i class="fa fa-tag"></i>Photo
+                            </span>
+                            <p>In order to be irreplaceable, one must always be different.
+                            </p>
+                        </span>
+                    </a>
+                    
+                    <a href="project_video_8.html" class="element category-3">
+                        <img src="img/portfolio/8_thumb.jpg" class="portfolio-image" alt="portfolio image"/>
+                        <span class="portfolio-text">
+                            <h3>Shiba lnu
+                            </h3>
+                            <span><i class="fa fa-tag"></i>Video
+                            </span>
+                            <p>In order to be irreplaceable, one must always be different.
+                            </p>
+                        </span>
+                    </a>
+                    
+                    <a href="project_image_9.html" class="element category-1">
+                        <img src="img/portfolio/9_thumb.jpg" class="portfolio-image" alt="portfolio image"/>
+                        <span class="portfolio-text">
+                            <h3>Shiba lnu
+                            </h3>
+                            <span><i class="fa fa-tag"></i>Photo
+                            </span>
+                            <p>In order to be irreplaceable, one must always be different.
+                            </p>
+                        </span>
+                    </a>
+                    
+                    <a href="project_carousel_10.html" class="element category-2">
+                        <img src="img/portfolio/10_thumb.jpg" class="portfolio-image" alt="portfolio image"/>
+                        <span class="portfolio-text">
+                            <h3>Shiba lnu
+                            </h3>
+                            <span><i class="fa fa-tag"></i>Gallery
+                            </span>
+                            <p>LIn order to be irreplaceable, one must always be different.
+                            </p>
+                        </span>
+                    </a>
+                    
+                    <a href="project_carousel_11.html" class="element category-2">
+                        <img src="img/portfolio/11_thumb.jpg" class="portfolio-image" alt="portfolio image"/>
+                        <span class="portfolio-text">
+                            <h3>Shiba lnu
+                            </h3>
+                            <span><i class="fa fa-tag"></i>Gallery
+                            </span>
+                            <p>In order to be irreplaceable, one must always be different.
+                            </p>
+                        </span>
+                    </a>
+                    
+                    <a href="project_video_12.html" class="element category-3">
+                        <img src="img/portfolio/12_thumb.jpg" class="portfolio-image" alt="portfolio image"/>
+                        <span class="portfolio-text">
+                            <h3>Shiba lnu
+                            </h3>
+                            <span><i class="fa fa-tag"></i>Video
+                            </span>
+                            <p>In order to be irreplaceable, one must always be different.
+                            </p>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <img class="masthead-image parallax" src="img/main2.jpg">
+		</div>
+		<!-- portfolio ends -->
+		
+		<!-- about begins -->
+		<div class="content-section" id="about">
+            <div class="container">
+                <h1 style="color: #f8166c;">About</h1>
+                <p class="medium-text">
+                My name is Shiba lnu. 我 <strong>活 泼 爱 动</strong></p>
+                <div class="row-fluid">
+                    <div class="span7">
+                        <h3 class="main-color">Plog</h3>
+                        
+                        <div class="row-employment">
+                            <h4 class="thin-title">柴柴的小天地</h4>
+                            <strong class="about-meta"><i class="fa fa-calendar"></i>July 2021 - Oct 2013</strong>
+                            <p>我还是希望此刻的你，看到这些文字，能有一个短暂的清净，忘记一切，享受简单美好。
+                            </p>
+                        </div>
+                        <div class="row-employment">
+                            <h4 class="thin-title">小㊙密</h4>
+                            <strong class="about-meta"><i class="fa fa-calendar"></i>July 2021 - July 2022</strong>
+                            <p>种自己的花，爱自己的宇宙。</p>
+                        </div>
+                        <div class="row-employment">
+                            <h4 class="thin-title">便签</h4>
+                            <strong class="about-meta"><i class="fa fa-calendar"></i>Dec 2021 - July 2022</strong>
+                            <p>在这个夏天和更好的自己见面。</p>
+                        </div>
+						<div class="row-employment">
+                            <h4 class="thin-title">日记</h4>
+                            <strong class="about-meta"><i class="fa fa-calendar"></i>Feb 2022 - July 2022</strong>
+                            <p>天总会亮的，没有太阳也会。</p>
+                        </div>
+                    </div>
+                    <div class="span4 offset1">
+                       	<h3 class="main-color">Hobby</h3>
+                        <div>
+                            <div class="progress">
+                              <div class="bar" style="width: 90%">
+                                <span>吃饭</span>
+                              </div>
+                            </div>
+                            <div class="progress">
+                              <div class="bar" style="width: 50%">
+                                <span>睡觉</span>
+                              </div>
+                            </div>
+                            <div class="progress">
+                              <div class="bar" style="width: 60%">
+                                  <span>玩</span>
+                              </div>
+                            </div>
+                            <div class="progress">
+                              <div class="bar" style="width: 70%">
+                                  <span>旅游</span>
+                              </div>
+                            </div>
+                            <div class="progress">
+                                <div class="bar" style="width: 55%">
+                                    <span>打游戏</span>
+                                </div>
+                            </div>
+                            <div class="progress">
+                              <div class="bar" style="width: 50%">
+                                    <span>追剧</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="main-color">Education</h3>
+						<div>
+							<div class="row-edu">
+								<h4 class="thin-title">四川普通职业学院</h4>
+								<strong class="about-meta">毕业于： 2022</strong>
+							</div>
+							<div class="row-edu">
+								<h4 class="thin-title">四川轻化工大学</h4>
+								<strong class="about-meta">开始于： 2022</strong>
+							</div>
+						</div>
+						<h3 class="main-color">每日摘抄</h3>
+
+						<div id="testimonials_carousel" class="carousel slide">
+						  <div class="carousel-inner">
+							<div class="item active">
+							  <blockquote>勤奋是一种可以吸引一切美好事物得到天然石
+								<small>罗.伯顿</small>
+							  </blockquote>
+							</div>
+							<div class="item">
+							  <blockquote>青春不是人生的一段时期，而是心灵的一种状态
+								<small>塞涅卡</small>
+							  </blockquote>
+							</div>
+							<div class="item">
+							  <blockquote>开开开开开开开开心♥♥♥♥♥♥♥♥♥♥
+								<small>渥斯说的</small>
+							  </blockquote>
+							</div>
+						  </div>
+						  <ol class="carousel-indicators testimonials">
+							<li data-target="#testimonials_carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#testimonials_carousel" data-slide-to="1" class=""></li>
+							<li data-target="#testimonials_carousel" data-slide-to="2" class=""></li>
+						  </ol>
+						</div>
+                    </div>
+                </div> 
+				
+            </div>
+            <img class="masthead-image parallax" src="img/main3.jpg">
+		</div>
+		<!-- about ends -->
+		
+		<!-- contact begins -->
+		<div class="content-section" id="contact">
+            <div class="container">
+                <h1 style="color: #f8166c;">Contact</h1>
+               <!-- <div clas="row-fluid">
+                    <img class="google-maps-embed" src="img/Piggy Pink.jpg"/>
+                </div> -->
+				<div class="swiper">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+							<img class="google-maps-embed" src="img/Piggy Pink.jpg"/>
+						</div>
+				        <div class="swiper-slide">
+							<img class="google-maps-embed" src="img/Piggy Pink1.jpg"/>
+						</div>
+				        <div class="swiper-slide">
+							<img class="google-maps-embed" src="img/Piggy Pink2.jpg"/>
+						</div>
+				    </div>
+				    <!-- 如果需要分页器 -->
+				    <div class="swiper-pagination"></div>
+				    
+				    <!-- 如果需要导航按钮 -->
+				    <!-- <div class="swiper-button-prev"></div>
+				    <div class="swiper-button-next"></div> -->
+				    
+				    <!-- 如果需要滚动条 -->
+				    <div class="swiper-scrollbar"></div>
+				</div>
+                <br>
+                <div class="row-fluid">
+                    <div class="span5">
+                        <h3 class="main-color">Personal Info</h3>
+                        <p class="medium-text">
+                            <i class="fa fa-user h4-icon"></i> Shiba lnu
+                        <br>
+                            <i class="fa fa-phone h4-icon"></i> 555-222-7777
+                        <br>
+                            <i class="fa fa-home h4-icon"></i> 123 Street, City Address
+                        <br>
+                            <i class="fa fa-envelope h4-icon"></i> JShiba lnu@qq.com
+                        <br>
+                            <i class="fa fa-facebook h4-icon"></i> facebook.com/Shibalnu
+                        <br>
+                            <i class="fa fa-twitter h4-icon"></i> @MyT
+                        </p>
+                    </div>
+                    <div class="span7">
+                         <h3 class="main-color">Email Me</h3>
+                         <form class="contact_form" id="contact_form">
+                            <div class="contact-row">
+                                  <i class="fa fa-user"></i>
+                                  <input type="text" id="fname" placeholder="Name">
+                            </div>
+                            <div class="contact-row">
+                                  <i class="fa fa-envelope"></i>
+                                  <input type="text" id="email" placeholder="Email">      
+                            </div> 
+                            <div class="contact-row">
+                                  <i class="fa fa-comment"></i>
+                                  <textarea id="message" name="message" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" id="submit_contact_info" class="btn btn-primary btn-large btn-clear">Send message <i class="fa fa-envelope"></i></button>
+                        </form>
+                        <div class="alert-success alert">
+                                Thank you for your message! I will get back to you as soon as possible.
+                            </div>
+                            <div class="alert-error alert">
+                                Sorry, your message was not sent successfully.
+                            </div>
+                    </div>
+				</div>
+               
+            </div>
+            <img class="masthead-image parallax" src="img/main4.jpg">
+		</div>
+		<!-- contact ends -->
+		
+        <div class="overlay"></div>
+        <div class="portfolio-overlay">
+        </div>
+       
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <!-- <script src="js/vendor/jquery.ui.ease.js"></script> -->
+        <script src="js/vendor/jquery.isotope.min.js"></script>
+        <!--[if lte IE 9]>
+            <script src="js/ie.js"></script>
+        <![endif]-->
+        <script src="js/main.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script>
+			var mySwiper = new Swiper ('.swiper', {
+			  // direction: 'vertical', // 垂直切换选项
+			  loop: true, // 循环模式选项
+			  
+			  // 如果需要分页器
+			  pagination: {
+			    el: '.swiper-pagination',
+			  },
+			  
+			  // 如果需要前进后退按钮
+			  navigation: {
+			    nextEl: '.swiper-button-next',
+			    prevEl: '.swiper-button-prev',
+			  },
+			  
+			  // 如果需要滚动条
+			  scrollbar: {
+			    el: '.swiper-scrollbar',
+			  },
+			  autoplay:true
+			})        
+		</script>
+    </body>
+</html>
